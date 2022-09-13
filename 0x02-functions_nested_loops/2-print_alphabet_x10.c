@@ -1,22 +1,26 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_alphabet_x10 - func
+ * print_alphabet_x10 - prints alphabets 10
  *
- * Return - 0
+ * Description: prints 10 times
+ * Return: Always(0).
  */
+
 void print_alphabet_x10(void)
 {
-int b = 0;
-while (b < 10)
-{
-char a = 'a';
-while (a <= 'z')
-{
-_putchar(a);
-a++;
-}
-_putchar('\n');
-b++;
-}
+	int alphabet_count = 0;
+
+	while (alphabet_count < 10)
+	{
+		char ch = 'a';
+
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		alphabet_count++;
+		_putchar('\n');
+	}
 }
